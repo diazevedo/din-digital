@@ -1,0 +1,23 @@
+.carousel-wrapper {
+  width: 970px;
+  height: 370px;
+  
+}
+
+.carousel-wrapper .button-default {
+  width: 130px;
+  height: 33px;
+}
+
+.carousel-wrapper li {
+  display: flex;
+}
+
+
+.carousel-wrapper li img {
+  flex-grow: 6;
+}
+
+.text-box {
+ width: 500px;
+}

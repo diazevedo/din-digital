@@ -1,5 +1,6 @@
 .button-default {
   background-color: var(--color-third);
+  font-family: inherit;
   font-size: var(--size-small);
   font-weight: 300;
   border: none;

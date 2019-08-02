@@ -2,6 +2,7 @@
   width: 100%;
   height: 150px;
   border-top: var(--color-third) 5px solid;
+  border-bottom: var(--color-nineth) 1px solid;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -20,13 +21,11 @@
   width: 220px;
   height: 33px;
   margin-right: var(--spacing-smallest);
-  font-family: inherit;
 }
 
 .header .form-default .button-default {
   width: 70px;
   height: 33px;
-  font-family: inherit
 }
 
 .header .figure-default .img-log {

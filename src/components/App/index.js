@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header'
+import Section from '../Section'
 
 import './styles.css';
 
@@ -85,6 +86,7 @@ function App() {
   return (
     <>
       <Header images={images} menus={menus}/>
+      <Section />
     </>
   );
 }

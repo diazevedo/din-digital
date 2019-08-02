@@ -1,0 +1,6 @@
+.section-default {
+  border-bottom: var(--color-nineth) 1px solid;
+}
+.section-default .carousel-wrapper {
+  margin-top: 50px;
+}
