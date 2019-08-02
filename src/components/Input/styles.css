@@ -1,0 +1,14 @@
+.input-default {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-eighth);
+  color: var(--color-base);
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.input-default::placeholder {
+  text-transform: capitalize;
+  opacity: 1;
+}
