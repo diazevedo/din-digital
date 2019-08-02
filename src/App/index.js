@@ -4,7 +4,6 @@ import './styles.css';
 function App() {
   return (
     <>
-      <h1>Din Digital</h1>
     </>
   );
 }
