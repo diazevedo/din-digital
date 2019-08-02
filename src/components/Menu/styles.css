@@ -1,0 +1,23 @@
+.menu-wrapper {
+  width: 530px;
+}
+
+.menu-list {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list .menu-item {
+  text-decoration: none;
+  color: var(--color-second);
+  font-size: 12px;
+}
+
+.menu-items:hover .menu-item {
+  color: var(--color-seventh);
+}
+
+.menu-item.-active {
+  color: var(--color-third);
+}

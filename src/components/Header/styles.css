@@ -22,14 +22,20 @@
   width: 220px;
   height: 33px;
   margin-right: 4px;
+  font-family: inherit;
 }
 
 .header .form-default .button-default {
   width: 70px;
   height: 33px;
+  font-family: inherit
 }
 
 .header .figure-default .img-log {
   display: block;
   width: 156px;
+}
+
+.header .menu-wrapper {
+  justify-self: end;
 }
