@@ -2,9 +2,27 @@
   width: 100%;
   height: 150px;
   border-top: var(--color-third) 6px solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header > input {
+.header .input-default {
   width: 220px;
   height: 33px;
+}
+
+.header .button-default {
+  width: 70px;
+  height: 33px;
+}
+
+.header .form-default {
+  width: 300px;
+  height: 35px;
+}
+
+.header .form-default .input-default{
+  margin-right: 4px;
 }

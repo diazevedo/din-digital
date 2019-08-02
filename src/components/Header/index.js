@@ -1,6 +1,8 @@
 import React from 'react'
 import Social from '../Social'
 import Input from '../Input'
+import Button from '../Button'
+import Form from "../Form"
 
 import './styles.css'
 
@@ -8,8 +10,14 @@ const Header = ({ images }) => {
   
   return (
     <header className="header">
+      
       <Social images={ images } />
-      <Input placeholder="search our website..." />
+      
+      <Form>
+        <Input placeholder="search our website..." />
+        <Button content="search" />
+      </Form>
+
     </header>
   )
 
