@@ -1,7 +1,32 @@
 .carousel-wrapper {
-  width: 970px;
-  height: 370px;
-  
+  width: 960px;  
+  margin: 0 auto;
+}
+
+.carousel-wrapper .carousel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-box {
+  width: 480px;
+  font-family: inherit;
+  position: relative;
+  color:var( --color-first);
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.title-box {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.paragraph-box {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .carousel-wrapper .button-default {
@@ -9,15 +34,28 @@
   height: 33px;
 }
 
-.carousel-wrapper li {
-  display: flex;
+.bullet {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-third);
+  border: 3px var(--color-third) solid;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* text-indent: -999px; */
 }
 
-
-.carousel-wrapper li img {
-  flex-grow: 6;
+.bullet:hover:not(.-active) {
+  border-color: var(--color-seventh);
+  background-color: var(--color-seventh);
 }
 
-.text-box {
- width: 500px;
+.bullet.-active {
+  background-color: var(--color-base);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }

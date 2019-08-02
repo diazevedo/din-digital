@@ -8,4 +8,5 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--color-base);
+  cursor: pointer;
 }

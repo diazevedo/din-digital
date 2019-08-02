@@ -14,7 +14,7 @@
   font-size: var(--size-small);
 }
 
-.menu-items:hover .menu-item {
+.menu-items:hover .menu-item:not(.-active) {
   color: var(--color-seventh);
 }
 
