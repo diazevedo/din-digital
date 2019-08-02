@@ -1,0 +1,17 @@
+.link-logo {
+  display: inline-block;
+  background-color: var(--color-fourth);
+  border-radius: 50%;
+  position: relative;
+}
+
+.link-logo:hover{
+  background-color: var(--color-seventh);
+}
+
+.link-logo .icon-external-logo {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}

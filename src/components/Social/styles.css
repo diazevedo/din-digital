@@ -1,0 +1,17 @@
+.social-links {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links .link-logo {
+  width: 33px;
+  height: 33px;
+}
+
+.social-links .icon-external-logo {
+  width: 17px;
+  height: 15px;
+}

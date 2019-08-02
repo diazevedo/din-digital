@@ -1,12 +1,16 @@
 import React from 'react'
+import Social from '../Social'
 
-const Header = ({images}) => {
+import './styles.css'
+
+const Header = ({ images }) => {
   
   return (
     <header className="header">
-      <h1>Teste</h1>
+      <Social images={ images } />
     </header>
   )
+
 }
 
 export default Header

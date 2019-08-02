@@ -12,23 +12,33 @@ import RSS from '../../images/icon-rss.png'
 const images = [
   {
     id: 0,
-    src: Linkedin
+    src: Linkedin,
+    href: 'https://www.linkedin.com/in/diazevedo/',
+    alt: "Linkedin logo"
   },
   {
     id: 1,
-    src: Twitter
+    src: Twitter,
+    href: 'https://twitter.com/i/moments',
+    alt: "Twitter logo"
   },
   {
     id: 2,
-    src: Pinterest
+    src: Pinterest,
+    href: 'https://www.pinterest.com.au/pinterest/',
+    alt: "Pinterest logo"
   },
   {
     id: 3,
-    src: GooglePlus
+    src: GooglePlus,
+    href: '#',
+    alt: "Google Plus logo"
   },
   {
     id: 4,
-    src: RSS
+    src: RSS,
+    href: '#',
+    alt: "RSS logo"
   }
 ]
 
