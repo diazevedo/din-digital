@@ -12,22 +12,24 @@
   padding-right: 20px;
 }
 
-.header .input-default {
-  width: 220px;
-  height: 33px;
-}
-
-.header .button-default {
-  width: 70px;
-  height: 33px;
-}
-
 .header .form-default {
   width: 294px;
   height: 35px;
   justify-self: end;
 }
 
-.header .form-default .input-default{
+.header .form-default .input-default {
+  width: 220px;
+  height: 33px;
   margin-right: 4px;
+}
+
+.header .form-default .button-default {
+  width: 70px;
+  height: 33px;
+}
+
+.header .figure-default .img-log {
+  display: block;
+  width: 156px;
 }
