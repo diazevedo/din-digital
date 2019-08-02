@@ -17,8 +17,16 @@ const Header = ({ images }) => {
         <Input placeholder="search our website..." />
         <Button content="search" />
       </Form>
-
+      
+      <Social images={ images } />
+      
+      <Form>
+        <Input placeholder="search our website..." />
+        <Button content="search" />
+      </Form>
+      
     </header>
+    
   )
 
 }

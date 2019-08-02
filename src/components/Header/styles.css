@@ -3,9 +3,13 @@
   height: 150px;
   border-top: var(--color-third) 6px solid;
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 0px;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header .input-default {
@@ -19,8 +23,9 @@
 }
 
 .header .form-default {
-  width: 300px;
+  width: 294px;
   height: 35px;
+  justify-self: end;
 }
 
 .header .form-default .input-default{
