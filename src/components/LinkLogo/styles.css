@@ -1,7 +1,7 @@
 .link-logo {
   display: inline-block;
   background-color: var(--color-fourth);
-  border-radius: 50%;
+  border-radius: var(--size-radius-full);
   position: relative;
 }
 

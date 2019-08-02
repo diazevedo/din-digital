@@ -11,7 +11,7 @@
 .menu-list .menu-item {
   text-decoration: none;
   color: var(--color-second);
-  font-size: 12px;
+  font-size: var(--size-small);
 }
 
 .menu-items:hover .menu-item {

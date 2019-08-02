@@ -1,11 +1,11 @@
 .input-default {
   border: none;
-  border-radius: 10px;
+  border-radius: var(--size-radius);
   background-color: var(--color-eighth);
   color: var(--color-base);
-  font-size: 12px;
+  font-size: var(--size-small);
   font-weight: 300;
-  padding-left: 10px;
+  padding-left: var(--spacing-smaller);
   box-sizing: border-box;
 }
 
