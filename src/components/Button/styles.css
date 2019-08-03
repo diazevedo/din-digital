@@ -9,4 +9,11 @@
   text-align: center;
   color: var(--color-base);
   cursor: pointer;
+  transition-duration: 0.5s;
 }
+
+.button-default:hover {
+  font-size: 14px;
+}
+
+

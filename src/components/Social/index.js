@@ -8,7 +8,7 @@ const Social = ({ images }) => (
     {
       images.map(({id, href, src, alt}) => 
         <LinkLogo
-          id={id}
+          key={id}
           href={href}
           src={src}
           alt={alt}
