@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import Button from '../Button'
-import Figure from '../Figure'
-import Image from '../Image'
+import Bullet from '../Bullet'
+import Card from '../Card';
 
 import './styles.css'
 
@@ -12,7 +11,8 @@ import MonitorThree from '../../images/monitor-three.png'
 import MonitorFour from '../../images/monitor-four.png'
 
 
-const Carousel = ({imagesP, onClick}) => {
+
+const Carousel = () => {
   
   const [images, setItems] = useState([
     {
@@ -78,18 +78,16 @@ const Carousel = ({imagesP, onClick}) => {
     <div className="carousel-wrapper">
       <ul className="ul-height">  
       {
-        images.map(({ id, src, title, text, buttonText, active }) => 
+        images.map(({ id, src, alt, title, text, buttonText, active }) => 
           <li className={`carousel-item ${active ? `-active` : ``}`} key={id} >
-
-            <Figure>
-              <Image src={src} alt="Monitor" className="carousel-image"/>
-            </Figure>
-
-            <div className="text-box">
-              <h2 className="title-box">{ title }</h2>
-              <p className="paragraph-box">{ text }</p>
-              <Button content={buttonText} className=""/>
-            </div>
+            <Card
+              src={src}
+              alt={alt}
+              title={title}
+              text={text}
+              buttonText={buttonText}
+              className="carousel-image"
+            />
           </li>
         )
       }
@@ -99,22 +97,18 @@ const Carousel = ({imagesP, onClick}) => {
       {
         images.map(({ id, title, active }) => 
           <li key={id} >
-            <a 
-              href="#" 
-              className={`bullet ${active ? `-active` : ``}`}
-              onClick={e => handleButtonClick(e, id)
-              }
-            >
-              { title }
-            </a>
+            <Bullet
+              href='#'
+              content={ title }
+              isActive={ active }
+              onClick={e => handleButtonClick(e, id)}
+            />
           </li>
         )
       }
       </ul>
-      
     </div>
   )
-
 }
 
 export default Carousel
