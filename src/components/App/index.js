@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header'
-import Section from '../Section'
+import SectionCarousel from '../SectionCarousel'
+import Card from '../Card'
+
 
 import './styles.css';
 
@@ -9,6 +11,10 @@ import Twitter from '../../images/icon-twitter.png'
 import Pinterest from '../../images/icon-pinterest.png'
 import GooglePlus from '../../images/icon-google-plus.png'
 import RSS from '../../images/icon-rss.png'
+
+import Monitor from '../../images/monitor.png'
+import MonitorOne from '../../images/monitor-one.png'
+import MonitorTwo from '../../images/monitor-two.png'
 
 const images = [
   {
@@ -82,11 +88,57 @@ const menus = [
   }
 ]
 
+const imagesSection = [{
+  id: 0,
+  src: Monitor,
+  alt: "Monitor",
+  title: 'First Image',
+  text: "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.",
+  buttonText: "read more »",
+  active: true
+},
+{
+  id: 1,
+  src: MonitorOne,
+  alt: "Second Image",
+  title: 'Second Image',
+  text: "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.",
+  buttonText: "read more »",
+  active: false
+},
+{
+  id: 2,
+  src: MonitorTwo,
+  alt: "Third Image",
+  title: 'Third Image',
+  text: "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.",
+  buttonText: "read more »",
+  active: false
+}]
+
+
+
+
 function App() {
   return (
     <>
       <Header images={images} menus={menus}/>
-      <Section />
+      <SectionCarousel />
+      <section className="card-three">
+      {
+        imagesSection.map(({ id, src, alt, title, text, buttonText }) => 
+            <Card
+              key={id}
+              src={src}
+              alt={alt}
+              title={title}
+              text={text}
+              buttonText={buttonText}
+              className="card-mid"
+            />
+        )
+      }
+      </section>
     </>
   );
 }

@@ -5,9 +5,9 @@ import TextBox from '../TextBox'
 
 import './styles.css'
 
-const Card = ({ src, alt, title, text, buttonText, className = ''}) => (
-  <>
-    <Figure>
+const Card = ({ src, alt, title, text, buttonText, className = '', classNameFigure = '', cardClassName = ''}) => (
+  <article className={`card-default ${cardClassName}`}>
+    <Figure className={classNameFigure}>
       <Image src={src} alt={alt} className={className}/>
     </Figure>
     <TextBox 
@@ -15,7 +15,7 @@ const Card = ({ src, alt, title, text, buttonText, className = ''}) => (
       text={text}
       buttonText={buttonText}
     />
-  </>
+  </article>
 )
 
 export default Card

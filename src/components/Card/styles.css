@@ -1,0 +1,12 @@
+.card-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-three {
+  background-color: green;
+  display: flex;
+}
+

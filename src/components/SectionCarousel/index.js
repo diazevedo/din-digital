@@ -7,7 +7,7 @@ const carouselItems = [
 
 ]
 
-const Section = () => {
+const SectionCarousel = () => {
   return (
     <section className="section-default">
       <Carousel items={carouselItems}/>
@@ -15,4 +15,4 @@ const Section = () => {
   )
 }
 
-export default Section
+export default SectionCarousel

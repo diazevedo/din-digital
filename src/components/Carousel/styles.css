@@ -11,15 +11,15 @@
   height: inherit;
 }
 
-.carousel-wrapper .carousel-item {
-  display: flex;
+.carousel-wrapper .carousel-item { 
   height: inherit;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   position: absolute;
   opacity: 0;
 }
+
+ .carousel-wrapper .carousel-item .card-default { 
+  height: inherit;
+ }
 
 .carousel-item .figure-default {
   width: 40%;
