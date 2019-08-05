@@ -5,8 +5,40 @@
   flex-wrap: wrap;
 }
 
-.card-three {
-  background-color: green;
+/** it should not be here*/
+.section-three-cards {
   display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  align-items: flex-start;
+}
+.section-three-cards .card-default {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section-three-cards .card-default.-card-three {
+  width: 30%;
 }
 
+.-card-three .figure-default {
+  width: 100%;
+  height: 160px;
+}
+
+.-card-three .text-box {
+  flex-basis: 100%;
+}
+
+.-card-three .title-box {
+  font-size: 16px;
+}
+
+.-card-three .paragraph-box {
+  font-size: 13px;
+}
+
+
+.-card-three button {
+  width: 130px;
+  height: 33px;
+}

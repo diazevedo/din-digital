@@ -124,7 +124,7 @@ function App() {
     <>
       <Header images={images} menus={menus}/>
       <SectionCarousel />
-      <section className="card-three">
+      <section className="section-default section-three-cards">
       {
         imagesSection.map(({ id, src, alt, title, text, buttonText }) => 
             <Card
@@ -135,6 +135,8 @@ function App() {
               text={text}
               buttonText={buttonText}
               className="card-mid"
+              classNameFigure=''
+              cardClassName='-card-three'
             />
         )
       }
