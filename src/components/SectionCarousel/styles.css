@@ -14,6 +14,20 @@
   border-bottom: var(--color-nineth) 1px solid;
 }
 
-.section-default .carousel-wrapper {
+.section-default .carousel-wrapper{
   margin-top: 50px;
+}
+
+.section-default.-section-three-cards {
+  display: flex;
+  justify-content: space-around;
+  height: 460px;
+  
+}
+
+.section-default.-section-three-cards .card-default.-card-three {
+  width: 30%;
+  height: 80%;
+  box-sizing: border-box;
+  margin-top: 40px;
 }

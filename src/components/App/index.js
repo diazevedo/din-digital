@@ -13,8 +13,6 @@ import GooglePlus from '../../images/icon-google-plus.png'
 import RSS from '../../images/icon-rss.png'
 
 import Monitor from '../../images/monitor.png'
-import MonitorOne from '../../images/monitor-one.png'
-import MonitorTwo from '../../images/monitor-two.png'
 
 const images = [
   {
@@ -93,25 +91,25 @@ const imagesSection = [{
   src: Monitor,
   alt: "Monitor",
   title: 'First Image',
-  text: "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.",
+  text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
   buttonText: "read more »",
   active: true
 },
 {
   id: 1,
-  src: MonitorOne,
+  src: Monitor,
   alt: "Second Image",
   title: 'Second Image',
-  text: "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.",
+  text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
   buttonText: "read more »",
   active: false
 },
 {
   id: 2,
-  src: MonitorTwo,
+  src: Monitor,
   alt: "Third Image",
   title: 'Third Image',
-  text: "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.",
+  text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
   buttonText: "read more »",
   active: false
 }]
@@ -124,7 +122,7 @@ function App() {
     <>
       <Header images={images} menus={menus}/>
       <SectionCarousel />
-      <section className="section-default section-three-cards">
+      <section className="section-default -section-three-cards">
       {
         imagesSection.map(({ id, src, alt, title, text, buttonText }) => 
             <Card
