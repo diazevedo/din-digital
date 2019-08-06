@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '../Header'
 import SectionCarousel from '../SectionCarousel'
 import Card from '../Card'
-
+import Section from '../Section'
+import TextBox from '../TextBox'
 
 import './styles.css';
 
@@ -14,7 +15,7 @@ import RSS from '../../images/icon-rss.png'
 
 import Monitor from '../../images/monitor.png'
 
-const images = [
+const socialIcons = [
   {
     id: 0,
     src: Linkedin,
@@ -86,45 +87,71 @@ const menus = [
   }
 ]
 
-const imagesSection = [{
-  id: 0,
-  src: Monitor,
-  alt: "Monitor",
-  title: 'First Image',
-  text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
-  buttonText: "read more »",
-  active: true
-},
-{
-  id: 1,
-  src: Monitor,
-  alt: "Second Image",
-  title: 'Second Image',
-  text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
-  buttonText: "read more »",
-  active: false
-},
-{
-  id: 2,
-  src: Monitor,
-  alt: "Third Image",
-  title: 'Third Image',
-  text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
-  buttonText: "read more »",
-  active: false
-}]
+const imagesSection = [
+  {
+    id: 0,
+    src: Monitor,
+    alt: "Monitor",
+    title: 'First Image',
+    text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
+    buttonText: "read more »",
+    active: true
+  },
+  {
+    id: 1,
+    src: Monitor,
+    alt: "Second Image",
+    title: 'Second Image',
+    text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
+    buttonText: "read more »",
+    active: false
+  },
+  {
+    id: 2,
+    src: Monitor,
+    alt: "Third Image",
+    title: 'Third Image',
+    text: "Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.",
+    buttonText: "read more »",
+    active: false
+  }
+]
 
-
-
+const imagesSectionTwoRows = [].concat(imagesSection, imagesSection);
+const imagesTwoRows = imagesSectionTwoRows.map( image => {
+  image.text = 'Morbit incidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam.'
+  return image;
+})
 
 function App() {
   return (
     <>
-      <Header images={images} menus={menus}/>
+      <Header images={socialIcons} menus={menus}/>
       <SectionCarousel />
-      <section className="section-default -section-three-cards">
+      <Section className='-section-three-cards'>
       {
         imagesSection.map(({ id, src, alt, title, text, buttonText }) => 
+          <Card
+            key={id}
+            src={src}
+            alt={alt}
+            title={title}
+            text={text}
+            buttonText={buttonText}
+            className="card-mid"
+            classNameFigure=''
+            cardClassName='-card-three'
+          />
+        )
+      }
+      </Section>
+      <Section className="-quote">
+        <header className="header-quote">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam 
+          erat. In fringilla massa ut nisi ullamcorper pellentesque"</p>
+        </header>
+        {
+          imagesTwoRows.map(({ id, src, alt, title, text, buttonText }) => 
             <Card
               key={id}
               src={src}
@@ -132,13 +159,36 @@ function App() {
               title={title}
               text={text}
               buttonText={buttonText}
-              className="card-mid"
+              className='-image-small'
               classNameFigure=''
-              cardClassName='-card-three'
+              cardClassName='-card-small'
             />
-        )
-      }
-      </section>
+          )
+        }
+      </Section>
+
+      <Section className="-contact-links">
+        <TextBox title = "contact details" text='' buttonText='' className="-text-footer">
+            <p>company Name</p>
+            <p>street name & number</p>
+            <p>Town</p>
+            <p>Postcode/Zip</p>
+            <p>Tel: xxxxx xxxxxxxxxx</p>
+            <p>Fax: xxxxx xxxxxxxxxx</p>
+            <p>Email: contact@mydomain.com</p>
+        </TextBox>
+        <TextBox title = "Quick Links" text='' buttonText='' className="-text-footer">
+            <a href="">Link Text Here</a>
+            <a href="">Link Text Here</a>
+            <a href="">Link Text Here</a>
+            <a href="">Link Text Here</a>
+        </TextBox>
+        <TextBox title = "from the blog" text='' buttonText='read more >>' className="-text-footer">
+            <h3>blog post title</h3>
+            <p>Posted by Admin on 00.00.0000</p>
+            <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+        </TextBox>
+      </Section>
     </>
   );
 }

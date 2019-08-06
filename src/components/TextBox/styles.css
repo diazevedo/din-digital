@@ -1,5 +1,4 @@
 .text-box {
-  flex-basis: 50%;
   font-family: inherit;
   color: var( --color-first);
   padding-right: var(--spacing-medium);
@@ -9,8 +8,8 @@
 .title-box {
   font-size: 42px;
   text-transform: uppercase;
-  font-weight: 300;
   padding-bottom: 5%;
+  font-weight: 700;
 }
 
 .paragraph-box {
@@ -22,6 +21,30 @@
   text-align: justify;
 }
 
-.text-box.-card {
-  
+.text-box.-text-footer {
+  color: var(--color-base);
+  width: 20%;
+  padding: 0;
+  height: 100%;
+}
+
+.text-box.-text-footer .title-box {
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 10%;
+}
+
+.text-box.-text-footer p {
+  font-size: 10px;
+  height: 15px;
+}
+
+.text-box.-text-footer a {
+  font-size: 10px;
+  color: var(--color-third);
+  display: block;
+  border-bottom: #2C2C2C 1px solid;
+  text-decoration: none;
+  height: 15px;
+  padding-top:5px;
 }
