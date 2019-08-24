@@ -4,9 +4,9 @@
   position: relative;
 }
 
-.section-default::after{
-  content:""; 
-  position: absolute; 
+.section-default::after {
+  content: "";
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -14,7 +14,7 @@
   border-bottom: var(--color-nineth) 1px solid;
 }
 
-.section-default .carousel-wrapper{
+.section-default .carousel-wrapper {
   margin-top: 50px;
 }
 
@@ -53,6 +53,11 @@
   text-align-last: center;
 }
 
+.section-default.-quote .figure-default {
+  border: black solid 0.5px;
+  padding: 2px;
+}
+
 .header-quote > p {
   font-size: 22px;
   font-style: italic;
@@ -62,10 +67,103 @@
   display: none;
 }
 
-.section-default.-contact-links {
+.section-default.-footer {
   background-color: #252525;
-  height: 260px;
+  /* height: 260px; */
+  width: 100vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+.section-default.-footer .text-box {
+  width: 250px;
+  height: 220px;
+}
+.section-default.-footer .title-box,
+.section-default.-footer .text-box p,
+.section-default.-footer .text-box h3,
+.section-default.-footer .box-details {
+  text-transform: capitalize;
+}
+
+.section-default.-footer .title-box {
+  margin-bottom: 20px;
+}
+
+.section-default.-footer .blog .title-post {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.section-default.-footer .blog .author {
+  margin-bottom: 5px;
+}
+
+.section-default.-footer .blog p {
+  line-height: 20px;
+  text-align: justify;
+  text-transform: initial;
+}
+.section-default.-footer .post-brief {
+  height: 80px;
+}
+
+.section-default.-footer .box-details p {
+  margin-bottom: 5px;
+}
+
+.section-default.-footer .contact-info {
+  margin-top: 15px;
+}
+.section-default.-footer .email {
+  text-decoration: underline;
+  color: var(--color-third);
+}
+
+.section-default.-footer .title-box {
+  margin-bottom: 20px;
+}
+
+.section-default.-footer .button-default.-button-link {
+  display: block;
+  margin-left: auto;
+}
+
+.section-default.-footer .form-default .button-default {
+  width: 80px;
+  height: 33px;
+}
+
+.section-default.-footer .form-default .input-default {
+  height: 32px;
+  width: 225px;
+  display: block;
+  margin-bottom: 10px;
+}
+.section-default.-footer::after {
+  content: "";
+  border: none;
+}
+
+@media (max-width: 750px) {
+  .section-default.-footer {
+    height: 500px;
+  }
+}
+
+@media (max-width: 410px) {
+  .section-default.-footer {
+    height: 900px;
+  }
+
+  .section-default.-quote {
+    height: 700px;
+  }
+
+  .card-default.-card-small {
+    width: inherit;
+    height: 75px;
+  }
 }

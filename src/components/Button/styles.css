@@ -4,7 +4,7 @@
   font-size: var(--size-small);
   font-weight: 300;
   border: none;
-  border-radius: var( --size-radius);
+  border-radius: var(--size-radius);
   text-transform: uppercase;
   text-align: center;
   color: var(--color-base);
@@ -16,4 +16,7 @@
   font-size: 14px;
 }
 
-
+.button-default.-button-link {
+  color: var(--color-third);
+  background: none;
+}

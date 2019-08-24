@@ -1,6 +1,6 @@
 .text-box {
   font-family: inherit;
-  color: var( --color-first);
+  color: var(--color-first);
   padding-right: var(--spacing-medium);
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@
   font-size: 16px;
   padding-bottom: 5%;
   line-height: 20px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   text-align: justify;
 }
 
@@ -43,8 +43,8 @@
   font-size: 10px;
   color: var(--color-third);
   display: block;
-  border-bottom: #2C2C2C 1px solid;
+  border-bottom: #2c2c2c 1px solid;
   text-decoration: none;
-  height: 15px;
-  padding-top:5px;
+  height: 20px;
+  padding-top: 8px;
 }

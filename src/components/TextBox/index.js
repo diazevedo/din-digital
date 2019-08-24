@@ -1,15 +1,9 @@
-import React from 'react'
-import Button from '../Button'
+import React from "react";
 
-import './styles.css'
+import "./styles.css";
 
-const TextBox = ({ title, text, buttonText, className, children,  }) => (
-  <div className={`text-box ${className}`}>
-    <h2 className="title-box">{ title }</h2>
-    <p className="paragraph-box">{ text }</p>
-    { children }
-    <Button content={buttonText} className=""/>
-  </div>
-)
+const TextBox = ({ className, children }) => (
+  <div className={`text-box ${className}`}>{children}</div>
+);
 
-export default TextBox
+export default TextBox;
